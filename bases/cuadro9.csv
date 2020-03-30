@@ -1,0 +1,11 @@
+Variable,eco,pol,intervencion
+Precio,++,++,No
+Directorio,++,++,No
+Acceso a mercado,++,++,Limitada
+Acceso a infraestructura,++,+,Limitada
+Inversión,++,+,No
+Endeudamiento,++,+,No
+RRHH,+,+,No requerida
+Presupuesto,+,+,No requerida
+Calidad producto,+,0,Si
+Calidad proceso,+,0,Si
