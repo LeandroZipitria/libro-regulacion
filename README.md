@@ -1,1 +1,1 @@
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "Get Started" at https://bookdown.org/home/about/ for how to compile this example.
+"Regulación Económica para Economías en Desarrollo” por Rosario Domingo, Jorge Ponce y Leandro Zipitría se distribuye bajo una Licencia Creative Commons Atribución 4.0 Internacional [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
