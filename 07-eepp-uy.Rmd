@@ -6,7 +6,7 @@ Leandro Zipitría
 
 \
 
-Como se discutió en el capítulo \@ref(#reg-eepp), la existencia de empresas públicas es un fenómeno habitual y económicamente significativo, pudiendo encontrarse empresas públicas en diversos sectores relevantes de la actividad económica en la mayoría de los países. En el caso de la economía uruguaya, en particular, las empresas públicas también son actores relevantes. Los servicios que prestan estas empresas alcanzan al 12% de la canasta del Índice de Precios al Consumo (IPC),
+Como se discutió en el capítulo \@ref(reg-eepp), la existencia de empresas públicas es un fenómeno habitual y económicamente significativo, pudiendo encontrarse empresas públicas en diversos sectores relevantes de la actividad económica en la mayoría de los países. En el caso de la economía uruguaya, en particular, las empresas públicas también son actores relevantes. Los servicios que prestan estas empresas alcanzan al 12% de la canasta del Índice de Precios al Consumo (IPC),
 ^[Se consideraron los rubros agua, saneamiento, electricidad, gas por red, supergas, nafta, gas oil, telefonía fija y celular.]
 los gastos en que incurren representan un 10% del Producto Bruto Interno (PBI),
 ^[@WorldBank2014]
@@ -174,7 +174,7 @@ Fuente: elaboración propia con base en datos del INE.
 Por su parte, las tarifas de las gasolinas se disparan a partir del año 1973, con motivo de la crisis del petróleo, y convergen nuevamente a la inflación a partir de la década de los noventa (gráfico \@ref(fig:fig4)).
 \
 
-```{r fig4, echo=FALSE, fig.cap= "Evolución real del precio de las gasolinas, 1968-2000 (Base 1968=100)", fig.topcaption=TRUE}
+```{r fig4, echo=FALSE, fig.cap= "Evolución real del precio de las gasolinas, 1968-2019 (Base 1968=100)", fig.topcaption=TRUE}
 
 base <- read.csv("bases/fig4.csv")
 
@@ -183,14 +183,14 @@ plot(Nafta95 ~ anio,
      main="",
      xlab="Años",
      ylab="Índice",
-     ylim = c(50,360),
+     ylim = c(50,400),
      las=2,
      las=1,
      type = "o",
      col = "red",
      bty = "l")
 lines(Gasoil ~ anio, type = "o", col = "blue", data = base)
-legend("topright", 
+legend("topleft", 
        legend = c("Nafta 95", "Gasoil"), 
        col = c("red","blue"), 
        pch = 1, 
@@ -199,7 +199,7 @@ legend("topright",
        cex = 1, 
        text.col = "black", 
        horiz = F , 
-#       inset = c(0.1, 0.1))
+       #       inset = c(0.1, 0.1))
 )
 
 

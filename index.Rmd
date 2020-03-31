@@ -5,14 +5,11 @@ date: 'Esta version: `r Sys.Date()`'
 output:
   pdf_document:
     citation_package: natbib
-    latex_engine: xelatex
 header-includes:
   - \usepackage{booktabs}
   - \usepackage{lmodern}
   - \usepackage{hyperref}
   - \usepackage{setspace}\onehalfspacing
-#  - \usepackage[spanish]{babel}
-#  - \addcontentsline{toc}{chapter}{\bibname}\bibliography{regulacion}
   - \usepackage{titling}
   - \pretitle{\begin{center}
     \begin{figure}[!h]
@@ -27,7 +24,7 @@ lang: es
 fontsize: 12pt
 bibliography: regulacion.bib
 biblio-style: econometrica-es.bst
-link-citations: yes
+link-citations: true
 description: Este es el documento del libro "Regulación económica para economías en desarrollo" de Domingo, Ponce y Zipitría.
 site: bookdown::bookdown_site
 
