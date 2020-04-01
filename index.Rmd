@@ -5,18 +5,20 @@ date: 'Esta version: `r Sys.Date()`'
 output:
   pdf_document:
     citation_package: natbib
+    latex_engine: xelatex
+    keep_tex: yes
 header-includes:
   - \usepackage{booktabs}
   - \usepackage{lmodern}
   - \usepackage{hyperref}
   - \usepackage{setspace}\onehalfspacing
   - \usepackage{titling}
-  - \pretitle{\begin{center}
+  - \pretitle{\begin{center} # foto de la tapa
     \begin{figure}[!h]
     \includegraphics[width=6.64in,height=9.36in]{imagenes/cover.jpg} 
     \end{figure}
     \pagebreak}
-  - \posttitle{\end{center}}
+  - \usepackage[nottoc]{tocbibind} # pone la bibliografía en el toc
   # html_document:
   #    df_print: paged
 documentclass: book
