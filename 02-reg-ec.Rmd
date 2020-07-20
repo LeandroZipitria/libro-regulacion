@@ -187,8 +187,10 @@ A modo de resumen, en el Tabla \@ref(tab:cuadro1) se presentan los principales t
 \
 
 ```{r cuadro1, echo=FALSE}
+
 base <- read.csv("bases/cuadro1.csv")
 knitr::kable(base, col.names = c("Tipo de eficiencia","Tipo de competencia","Categorías","Características","Efecto de la competencia"), caption = 'Tipos de eficiencia, características e impacto sobre estructuras de mercado.')
+
 ```
 
 Fuente: elaboración propia.

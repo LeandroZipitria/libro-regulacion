@@ -75,7 +75,7 @@
 \usepackage{hyperref}
 \usepackage{setspace}\onehalfspacing
 \usepackage{titling}
-\pretitle{\begin{center} \begin{figure}[!h] \includegraphics[width=6.64in,height=9.36in]{imagenes/cover.jpg} \end{figure} \pagebreak}
+\posttitle{\end{center}}
 \usepackage[nottoc]{tocbibind}
 \ifxetex
   % Load polyglossia as late as possible: uses bidi with RTL langages (e.g. Hebrew, Arabic)
@@ -89,7 +89,7 @@
 
 \title{Regulación económica para economías en desarrollo}
 \author{Rosario Domingo, Jorge Ponce, Leandro Zipitría}
-\date{Esta version: 2020-03-31}
+\date{Esta version: 2020-07-20}
 
 \begin{document}
 \maketitle
@@ -98,6 +98,8 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
+\newpage
+
 \hypertarget{prefacio}{%
 \chapter*{Prefacio}\label{prefacio}}
 \addcontentsline{toc}{chapter}{Prefacio}
@@ -479,7 +481,7 @@ En el caso en que la regulación establece precios por debajo de los competitivo
 
 En Uruguay, ello pasaba con el pan tarifado, que era un pan que las panaderías estaban obligadas a ofertar a un precio determinado. En caso de no contar con este producto, debían sustituirlo por otro de mayor calidad. En los hechos, el precio que se fijaba por el producto apenas cubría el costo de la harina para producirlo, con el consiguiente impacto sobre la calidad del mismo. Por otra parte, esta regulación afecta la inversión en formación de capital de la empresa. Si el precio de mercado no cubre los costos de reposición del capital, entonces las empresas dejarán de invertir y, en algunos casos, hasta de mantener las inversiones realizadas, con el consiguiente deterioro sobre la eficiencia.
 
-Otro escenario posible es cuando el regulador establece subsidios cruzados, afectando a más de un mercado al mismo tiempo. Si existen dos mercados con demandas y costos diferentes, pero se fija un único precio que es a la vez mínimo en un mercado y máximo en el otro, entonces el regulador estará fijando esquemas de subsidios entre mercados. Un resultado paradójico de este tipo de políticas es que ningún consumidor estará satisfecho. Los consumidores que pagan el producto más caro, no estarán satisfechos sabiendo que la entrada de más empresas implicaría mejores precios, mientras que aquellos que lo pagan más barato, en general, encuentran restricciones de oferta dado el precio que enfrentan. Una práctica más eficiente de fijación de precio, que se verá en la sección \ref(monop-nat), es establecer una política de precios de Ramsey. En los hechos esta política implica fijar precios en cada mercado atendiendo a la demanda en cada uno de ellos.
+Otro escenario posible es cuando el regulador establece subsidios cruzados, afectando a más de un mercado al mismo tiempo. Si existen dos mercados con demandas y costos diferentes, pero se fija un único precio que es a la vez mínimo en un mercado y máximo en el otro, entonces el regulador estará fijando esquemas de subsidios entre mercados. Un resultado paradójico de este tipo de políticas es que ningún consumidor estará satisfecho. Los consumidores que pagan el producto más caro, no estarán satisfechos sabiendo que la entrada de más empresas implicaría mejores precios, mientras que aquellos que lo pagan más barato, en general, encuentran restricciones de oferta dado el precio que enfrentan. Una práctica más eficiente de fijación de precio, que se verá en la sección \ref{monop-nat}, es establecer una política de precios de Ramsey. En los hechos esta política implica fijar precios en cada mercado atendiendo a la demanda en cada uno de ellos.
 
 En Uruguay, el transporte terrestre de pasajeros tiene este tipo de políticas. El Poder Ejecutivo fija una tarifa por kilómetro recorrido, independientemente del destino. Asimismo, se asigna a dos empresas las frecuencias entre dos ciudades y también se reparten los destinos entre las empresas, de forma que tengan destinos rentables y otros poco rentables. Por tanto, existe un subsidio cruzado entre los destinos con un precio fijado independientemente de la demanda y restricciones a la entrada y salida de los mercados.
 
@@ -712,8 +714,8 @@ El primero es que no dice nada respecto a cómo se fija el precio final en el me
 
 La complejidad de elementos que deben considerarse a la hora de fijar esta tarifa, ha llevado a algunos autores a plantear un precio techo global a la empresa monopólica que incluya la tarifa de acceso. Sin embargo, como esta estrategia da libertad a la empresa para fijar los precios individuales ---siempre que se cumpla con el precio techo global--- puede inducir a la empresa a fijar precios predatorios en el mercado competitivo como forma de inducir a las empresas a salir del mercado. Establecer el precio de acceso al segmento competitivo sigue siendo un tema complejo e intensivo en información.
 
-\hypertarget{conclusiones-1}{%
-\section{Conclusiones}\label{conclusiones-1}}
+\hypertarget{conclusiones}{%
+\section{Conclusiones}\label{conclusiones}}
 
 Regular es complejo. Hay que tomar en consideración las características del mercado sobre el que se busca intervenir y su estructura. Algunas veces, la regulación resulta una elección entre males con distinto peso relativo. Es difícil encontrar un mecanismo que resuelva una situación problemática sin que ello no genere un problema adicional sobre alguna otra variable. Al regular se altera los incentivos de las empresas. No tomar en cuenta estos efectos puede llevar a que la situación bajo regulación sea peor que si esta no existiera.
 
@@ -2001,8 +2003,8 @@ El regulador debe necesariamente intervenir en la interfase entre los segmentos 
 
 En resumen, el objetivo de la regulación en los mercados donde la competencia es posible y operan empresas públicas debe ser fomentar la competencia y fijar reglas iguales para todos los actores. Para ello, debe instrumentarse la separación contable de las actividades de estas empresas y hacer explícitos los subsidios cruzados entre sus actividades, si alguna de ellas fuera monopólica.
 
-\hypertarget{conclusiones-2}{%
-\section{Conclusiones}\label{conclusiones-2}}
+\hypertarget{conclusiones}{%
+\section{Conclusiones}\label{conclusiones}}
 
 El análisis realizado permite comprender el funcionamiento y las características de las empresas públicas y su vinculación con los gobiernos o sea sus propietarios.
 
@@ -2588,8 +2590,8 @@ En los hechos, actualmente esta coordinación se logra ex post, cuando alguno de
 
 En última instancia, es dejar la gestión de la empresa a su directorio y que la institución coordinadora defina los objetivos que deben cumplir las empresas, tal como establece \citet{Ramamurti1991}. Ello también permite un mejor control del desempeño de los directores, aunque este aspecto siempre estará afectado por los vaivenes que pueda sufrir los cambios en las ponderaciones de los diferentes principales, producto de los cambios en otros sectores de la economía y de la política.
 
-\hypertarget{conclusiones-3}{%
-\section{Conclusiones}\label{conclusiones-3}}
+\hypertarget{conclusiones}{%
+\section{Conclusiones}\label{conclusiones}}
 
 En América Latina las empresas propiedad del Estado en sectores claves de la economía es un fenómeno que se manifiesta desde fines del siglo XIX. Por su parte, la crisis de los ochenta deja de manifiesto una serie de problemas presentes en la mayoría de las empresas públicas de la región: falta de claridad y jerarquización de objetivos; deficiencia en la gestión empresarial; menosprecio por la eficiencia y la racionalidad económica; y excesiva politización en su manejo. Esta situación deriva en los noventa en un proceso de privatización de empresas públicas en la mayoría de los países, con diferente grado de profundización.
 

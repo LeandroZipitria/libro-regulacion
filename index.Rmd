@@ -13,11 +13,12 @@ header-includes:
   - \usepackage{hyperref}
   - \usepackage{setspace}\onehalfspacing
   - \usepackage{titling}
-  - \pretitle{\begin{center} # foto de la tapa
-    \begin{figure}[!h]
-    \includegraphics[width=6.64in,height=9.36in]{imagenes/cover.jpg} 
-    \end{figure}
-    \pagebreak}
+  # - \pretitle{\begin{center} # foto de la tapa
+  #   \begin{figure}[!h]
+  #   \includegraphics[width=6.64in,height=9.36in]{imagenes/cover.jpg} 
+  #   \end{figure}
+  #   \pagebreak}
+  - \posttitle{\end{center}}
   - \usepackage[nottoc]{tocbibind} # pone la bibliografía en el toc
   # html_document:
   #    df_print: paged
@@ -29,13 +30,13 @@ biblio-style: econometrica-es.bst
 link-citations: true
 description: Este es el documento del libro "Regulación económica para economías en desarrollo" de Domingo, Ponce y Zipitría.
 site: bookdown::bookdown_site
-
 ---
 
 <!-- ```{r fig.align='center', echo=FALSE, out.width='120%',fig.pos='h'} -->
 <!-- knitr::include_graphics('imagenes/cover.jpg') -->
 <!-- ``` -->
 
+\newpage
 
 # Prefacio {-}
 

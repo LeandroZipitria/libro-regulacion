@@ -8,6 +8,8 @@ bookdown::gitbook:
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Publicado con bookdown</a></li>
     download: ["pdf", "epub"]
+    includes:
+      in_header: analytics.html
 bookdown::pdf_book:
   latex_engine: xelatex
   citation_package: natbib
